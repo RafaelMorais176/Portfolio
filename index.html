@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Morais - Portfólio</title>
+    <!-- Google Fonts: Montserrat para títulos, Open Sans para texto corrido -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <!-- Font Awesome para ícones sociais e outros -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!-- Link para o arquivo CSS principal, onde estão todos os estilos do site -->
+    <link rel="stylesheet" href="./public/styles/style.css">
+</head>
+<body>
+    <!-- Cabeçalho Principal: Contém o logo, menu de navegação e alternador de tema -->
+    <header id="main-header">
+        <nav id="main-nav" class="container">
+            <div class="logo">
+                <a href="#main-header">Rafael Morais</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#sobre">Sobre mim</a></li>
+                <li><a href="#formacao">Formação</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+            <div class="nav-controls">
+                <!-- Botão para alternar entre tema claro e escuro -->
+                <button id="theme-toggle" class="theme-toggle" aria-label="Alternar tema" title="Alternar tema">
+                    <span class="icon-light icon" aria-hidden="true">
+                        <img src="./public/styles/imagens/pngtree-vector-sun-icon-png-image_4277292.jpg" alt="Ícone de Sol" width="22" height="22" />
+                    </span>
+                    <span class="icon-dark icon" aria-hidden="true">
+                        <img src="./public/styles/imagens/1004510.png" alt="Ícone de Lua" width="22" height="22" />
+                    </span>
+                </button>
+                <!-- Ícone do menu hambúrguer para navegação em dispositivos móveis -->
+                <div class="hamburger-menu">
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção: Sobre mim - Hero Section com apresentação pessoal e foto -->
+        <section id="sobre" class="hero-section">
+            <div class="container">
+                <h1>Olá, eu sou Rafael, Desenvolvedor Web.</h1>
+                <p class="subtitle">Transformando ideias em soluções digitais interativas e acessíveis.</p>
+                <!-- Substitua 'assets/profile-pic.jpg' pela sua imagem de perfil real -->
+                <img src="./public/styles/imagens/Captura de tela 2024-10-01 185042.png" alt="Sua Foto de Perfil" class="profile-picture">
+                <p>
+                    Com uma paixão crescente pelo desenvolvimento web, meu foco está em construir experiências digitais robustas e intuitivas utilizando HTML5, CSS3 e JavaScript puro. Acredito no poder do código limpo e na importância de um design responsivo que atenda a todos os usuários. Sou um entusiasta por aprender e aplicar as melhores práticas para entregar soluções inovadoras e de alta qualidade.
+                </p>
+                <p>
+                    Fora do universo da programação, dedico meu tempo à fotografia de paisagens, o que me ajuda a manter a mente criativa e o foco afiado.
+                </p>
+                <!-- Substitua 'assets/curriculo.pdf' pelo seu currículo real em PDF -->
+                <a href="assets/curriculo.pdf" download class="btn-primary">Download Currículo</a>
+            </div>
+        </section>
+
+        <!-- Seção: Certificações e Badges -->
+        <section id="certificacoes" class="section-padding">
+            <div class="container">
+                <h2>Certificações e Badges</h2>
+                <div class="portfolio-grid">
+                    <div class="portfolio-item">
+                        <img src="./public/styles/imagens/cisco-badge.png" alt="Badge Cisco - Introdução à Cibersegurança">
+                        <h3>Cisco - Introdução à Cibersegurança</h3>
+                        <p>Badge de fundamentos de segurança da informação.</p>
+                    </div>
+                    <div class="portfolio-item">
+                        <img src="./public/styles/imagens/c-programming-certificate.png" alt="Certificado - C Programming Language">
+                        <h3>C Programming Language</h3>
+                        <p>Certificado de conclusão do curso de programação em C.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Formação - Detalhes educacionais, cursos e habilidades -->
+        <section id="formacao" class="section-padding">
+            <div class="container">
+                <h2>Minha Jornada Educacional e Habilidades Chave</h2>
+                <div class="education-item">
+                    <h3>Engenharia de Software</h3>
+                    <p>UNINTER</p>
+                    <p>Período: 2024 – Atualmente (em curso)</p>
+                    <p>Destaques: Fundamentos de engenharia de software, sólidos princípios de programação e práticas modernas de desenvolvimento.</p>
+                    <ul>
+                        <li>Programação Orientada a Objetos (POO)</li>
+                        <li>Engenharia de Requisitos e Modelagem (UML)</li>
+                        <li>Banco de Dados (modelagem relacional e SQL)</li>
+                        <li>Estruturas de Dados e Algoritmos</li>
+                        <li>Arquitetura de Software e Padrões de Projeto</li>
+                        <li>Metodologias Ágeis (Scrum, Kanban)</li>
+                        <li>Teste de Software (unitário e integrado)</li>
+                        <li>DevOps básico (Git, GitHub, CI/CD introdutório)</li>
+                        <li>Projetos práticos guiados</li>
+                    </ul>
+                </div>
+                <div class="education-item">
+                    <h3>The Complete Full-Stack Web Development Bootcamp 2024 a 2025</h3>
+                    <p>Udemy – Dr. Angela Yu (The App Brewery)</p>
+                    <p>Período: 2024 – 2025</p>
+                    <p><strong>Tecnologias:</strong> HTML5, CSS3, Bootstrap, JavaScript (ES6+), DOM, jQuery, Git & GitHub, Node.js, Express.js, EJS, REST APIs, Autenticação (cookies/sessions), SQL, PostgreSQL, MongoDB, Mongoose, React (Hooks), Deploy.</p>
+                </div>
+                <div class="education-item">
+                    <h3>Certificação em Responsive Web Design</h3>
+                    <p>freeCodeCamp</p>
+                    <p>Ano de Conclusão: 2022</p>
+                </div>
+                <h3>Idiomas:</h3>
+                <ul class="language-list">
+                    <li>Português: Nativo</li>
+                    <li>Inglês: Avançado</li>
+                </ul>
+                <h3>Habilidades Técnicas:</h3>
+                <ul class="skills-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript (ES6+)</li>
+                    <li>Git & GitHub</li>
+                    <li>Design Responsivo</li>
+                    <li>Acessibilidade Web</li>
+                    <li>UI/UX Básico</li>
+                </ul>
+
+            </div>
+        </section>
+
+        <!-- Seção: Portfólio - Galeria de projetos desenvolvidos -->
+        <section id="portfolio" class="section-padding">
+            <div class="container">
+                <h2>Meus Projetos Recentes</h2>
+                <p class="subtitle">Explore uma amostra dos meus trabalhos e veja como transformo conceitos em realidade digital.</p>
+                <div class="portfolio-grid">
+                    <!-- Item de Projeto 1: Exemplo de um projeto de e-commerce -->
+                    <div class="portfolio-item">
+                        <!-- Substitua 'assets/project1.jpg' pela imagem real do projeto -->
+                        <img src="assets/project1.jpg" alt="Clone de E-commerce Moderno">
+                        <h3>Clone de E-commerce Moderno</h3>
+                        <p>Desenvolvimento de um clone de e-commerce com foco em uma interface de usuário intuitiva e responsiva. Implementei funcionalidades de busca de produtos, adição ao carrinho e visualização detalhada de itens, tudo com JavaScript puro.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-secondary">Ver Projeto</a>
+                            <a href="#" target="_blank" class="btn-secondary">GitHub</a>
+                        </div>
+                        <p class="technologies">HTML, CSS (Flexbox, Grid), JavaScript (Manipulação DOM)</p>
+                    </div>
+                    <!-- Item de Projeto 2: Exemplo de um gerenciador de tarefas -->
+                    <div class="portfolio-item">
+                        <!-- Substitua 'assets/project2.jpg' pela imagem real do projeto -->
+                        <img src="assets/project2.jpg" alt="Gerenciador de Tarefas Interativo">
+                        <h3>Gerenciador de Tarefas Interativo</h3>
+                        <p>Uma aplicação web para organização de tarefas diárias. Permite adicionar, editar, marcar como concluído e remover tarefas, com persistência de dados no `localStorage`. Interface limpa e fácil de usar.</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-secondary">Ver Projeto</a>
+                            <a href="#" target="_blank" class="btn-secondary">GitHub</a>
+                        </div>
+                        <p class="technologies">HTML, CSS, JavaScript (Event Listeners, localStorage)</p>
+                    </div>
+                    <!-- Item de Projeto 3: Exemplo de uma landing page -->
+                    <div class="portfolio-item">
+                        <!-- Substitua 'assets/project3.jpg' pela imagem real do projeto -->
+                        <img src="assets/project3.jpg" alt="Landing Page para Startup Tech">
+                        <h3>Landing Page para Startup Tech</h3>
+                        <p>Criação de uma landing page atraente e de alta conversão para uma startup fictícia. Destaque para animações com CSS puro, design responsivo e um formulário de contato integrado (validação via JS).</p>
+                        <div class="project-links">
+                            <a href="#" target="_blank" class="btn-secondary">Ver Projeto</a>
+                            <a href="#" target="_blank" class="btn-secondary">GitHub</a>
+                        </div>
+                        <p class="technologies">HTML, CSS (Animações, Responsividade), JavaScript (Validação de Formulário)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Contato - Formulário e informações de contato -->
+        <section id="contato" class="section-padding">
+            <div class="container">
+                <h2>Vamos Conectar?</h2>
+                <p class="subtitle">Estou sempre aberto a novas ideias, oportunidades de colaboração ou apenas para um bom bate-papo sobre tecnologia. Sinta-se à vontade para me enviar uma mensagem!</p>
+                <p class="form-instruction">Preencha o formulário abaixo e entrarei em contato o mais breve possível.</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <label for="name">Nome:</label>
+                        <input type="text" id="name" name="name" placeholder="Seu nome completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@exemplo.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Mensagem:</label>
+                        <textarea id="message" name="message" rows="6" placeholder="Sua mensagem..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar Mensagem</button>
+                    <p id="form-message" class="form-message"></p>
+                </form>
+                <div class="contact-info">
+                    <h3>Ou me encontre em:</h3>
+                    <ul>
+                        <li>E-mail: <a href="mailto:seu.email@exemplo.com"><i class="fas fa-envelope"></i> seu.email@exemplo.com</a></li>
+                        <li>LinkedIn: <a href="#" target="_blank"><i class="fab fa-linkedin"></i> Seu Perfil no LinkedIn</a></li>
+                        <li>GitHub: <a href="#" target="_blank"><i class="fab fa-github"></i> Seu Perfil no GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé: Informações de direitos autorais e links sociais -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Rafael Morais. Todos os direitos reservados.</p>
+            <div class="social-links">
+                <a href="#" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="#" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link para o arquivo JavaScript principal do site -->
+    <script src="script.js" defer></script>
+</body>
+</html>
