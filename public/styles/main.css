@@ -809,13 +809,13 @@ Tema Escuro
 
 */
 body.dark-theme {
-    --primary-color: #2a2a2a; /* Tom claro para destacar no fundo escuro */
-    --background-color: #191919;
+    --primary-color: #191919; /* Tom claro para destacar no fundo escuro */
+    --background-color: #111;
     --text-color: #E9ECEF;
-    --component-bg: #2a2a2a;
-    --border-color: #2a2a2a;
-    --header-bg: #2a2a2a;
-    --link-hover: #FFFFFF; /* Hover mais claro no tema escuro */
+    --component-bg: #191919;
+    --border-color: #191919;
+    --header-bg: #191919;
+    --link-hover: #E9ECEF; /* Hover mais claro no tema escuro */
     --form-error: #f0ad4e; 
     --form-success: #7FFF00; 
 }
