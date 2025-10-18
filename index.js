@@ -12,9 +12,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-/*
-* Funcionalidade do Menu Responsivo (para telas menores que 768px)
-*/
+
+//Funcionalidade do Menu Responsivo (para telas menores que 768px)
+
 const hamburgerMenu = document.querySelector('.hamburger-menu');
 const navLinks = document.querySelector('.nav-links');
 
@@ -33,9 +33,8 @@ navLinks.querySelectorAll('a').forEach(link => {
     });
 });
 
-/*
- Lógica para alternar Tema Claro/Escuro
-*/
+//Lógica para alternar Tema Claro/Escuro
+
 const themeToggle = document.getElementById('theme-toggle');
 const body = document.body;
 
@@ -60,47 +59,4 @@ themeToggle.addEventListener('click', () => {
         applyTheme('dark');
         localStorage.setItem('theme', 'dark');
     }
-});
-
-/*
-Lógica de Validação e Envio do Formulário de Contato
-*/
-const contactForm = document.getElementById('contact-form');
-const formMessage = document.getElementById('form-message');
-
-contactForm.addEventListener('submit', function(e) {
-    e.preventDefault();
-
-    const name = document.getElementById('name').value.trim();
-    const email = document.getElementById('email').value.trim();
-    const message = document.getElementById('message').value.trim();
-
-    // Limpa mensagens anteriores
-    formMessage.textContent = '';
-    formMessage.classList.remove('success', 'error');
-
-    if (name === '' || email === '' || message === '') {
-        formMessage.textContent = 'Por favor, preencha todos os campos.';
-        formMessage.classList.add('error');
-        formMessage.style.display = 'block';
-        return;
-    }
-
-    // Validação de formato de e-mail simples
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        formMessage.textContent = 'Por favor, insira um endereço de e-mail válido.';
-        formMessage.classList.add('error');
-        formMessage.style.display = 'block';
-        return;
-    }
-
-    // Simular envio (você pode integrar com um serviço de backend aqui)
-    console.log('Formulário enviado:', { name, email, message });
-
-    // Limpa o formulário e exibe mensagem de sucesso
-    contactForm.reset();
-    formMessage.textContent = 'Mensagem enviada com sucesso! Em breve entrarei em contato.';
-    formMessage.classList.add('success');
-    formMessage.style.display = 'block';
 });

@@ -1,10 +1,4 @@
-/* style.css */
-
-/*
-* CSS Reset
-* Reseta as margens e paddings padrão dos navegadores e define box-sizing para border-box
-* para facilitar o controle de layout e dimensões.
-*/
+/* reset da margen e espaçamento para todos os elementos*/
 * {
     margin: 0;
     padding: 0;
@@ -12,26 +6,22 @@
 }
 
 /*
-* Variáveis CSS para Tema Claro
-* Define uma paleta de cores base que pode ser facilmente alterada para o tema escuro.
-* Isso permite uma gestão centralizada das cores do site.
+Variáveis CSS para Tema Claro
 */
 :root {
-    --primary-color: #2B2E34; /* Slate neutro (charcoal com leve matiz azul) */
-    --background-color: #F8F9FA; /* Fundo principal claro */
-    --text-color: #343A40; /* Cor de texto principal escuro */
-    --component-bg: #FFFFFF; /* Fundo de componentes como header, cartões, formulário */
+    --primary-color: #2B2E34; 
+    --background-color: #F8F9FA; /* Fundo principal */
+    --text-color: #343A40; /* Cor de texto principal */
+    --component-bg: #FFFFFF; /* Fundo de componentes */
     --border-color: #CED4DA; /* Cor para bordas e linhas separadoras */
     --header-bg: #FFFFFF; /* Fundo do cabeçalho */
-    --link-hover: #3A3F46; /* Hover coerente com o slate */
+    --link-hover: #3A3F46; 
     --form-error: #DC3545; /* Cor para mensagens de erro no formulário */
     --form-success: #28A745; /* Cor para mensagens de sucesso no formulário */
 }
 
 /*
-* Estilos Base do Body
-* Define a fonte padrão, altura da linha, cor do texto e cor de fundo do documento.
-* A transição é aplicada para uma mudança suave de tema.
+definição da fonte e cores para o corpo principal da pagina
 */
 body {
     font-family: 'Roboto', sans-serif;
@@ -42,9 +32,7 @@ body {
 }
 
 /*
-* Estilos para Títulos
-* Define a família de fontes e margens para todos os níveis de títulos.
-* Cores são definidas pelas variáveis para suportar alternância de tema.
+Estilos para Títulos
 */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Roboto', sans-serif;
@@ -63,8 +51,7 @@ h2 {
 }
 
 /*
-* Estilo do Contêiner Global
-* Centraliza o conteúdo principal do site e adiciona padding lateral para responsividade.
+Estilo do Contêiner Global
 */
 .container {
     max-width: 1100px;
@@ -72,10 +59,7 @@ h2 {
     padding: 0 20px;
 }
 
-/*
-* Estilos para Links
-* Define cor, remove sublinhado e adiciona transição para efeitos de hover.
-*/
+
 a {
     color: var(--primary-color);
     text-decoration: none;
@@ -87,8 +71,7 @@ a:hover {
 }
 
 /*
-* Estilos para Botões
-* Define estilos para botões primários e secundários, incluindo cores, padding, bordas e efeitos de hover.
+Estilos para Botões
 */
 .btn-primary {
     background-color: var(--primary-color);
@@ -126,8 +109,7 @@ a:hover {
 }
 
 /*
-* Estilos para Seções
-* Define o padding padrão para a maioria das seções e garante a transição de cor de fundo.
+Estilos para Seções
 */
 .section-padding {
     padding: 80px 0;
@@ -136,9 +118,7 @@ a:hover {
 }
 
 /*
-* Estilos para a seção Sobre mim (Hero Section)
-* Configura a seção inicial do portfólio, centralizando o conteúdo vertical e horizontalmente.
-* Inclui estilos para título, subtítulo e imagem de perfil.
+Estilos para a seção Sobre mim 
 */
 .hero-section {
     min-height: calc(100vh - 70px); /* Altura da viewport menos altura do header */
@@ -148,7 +128,7 @@ a:hover {
     justify-content: center;
     text-align: center;
     background-color: var(--background-color);
-    padding-top: 70px; /* Para compensar o header fixo */
+    padding-top: 70px; 
 }
 
 .hero-section h1 {
@@ -183,8 +163,7 @@ a:hover {
 }
 
 /*
-* Estilos do Cabeçalho Principal
-* Define a aparência do cabeçalho fixo no topo da página, incluindo navegação, logo e botões.
+Estilos do Cabeçalho Principal
 */
 #main-header {
     background-color: var(--header-bg);
@@ -276,7 +255,7 @@ a:hover {
     line-height: 0;
 }
 
-/* No tema claro, ícone principal em preto fosco */
+
 /* Ajuste de exibição dos ícones com imagens (sol/lua) */
 .theme-toggle img {
     width: 24px;
@@ -296,7 +275,7 @@ body.dark-theme .theme-toggle .icon-dark svg {
     color: #FFFFFF;
 }
 
-/* Esconder variantes conforme o tema */
+/* Esconder conforme o tema */
 .theme-toggle .icon-dark,
 .theme-toggle .icon-light {
     display: none;
@@ -305,17 +284,16 @@ body:not(.dark-theme) .theme-toggle .icon-light { display: inline-flex; }
 body.dark-theme .theme-toggle .icon-dark { display: inline-flex; }
 
 /*
-* Estilos do Menu Hambúrguer (Mobile)
-* Define a aparência do ícone de hambúrguer e sua animação.
+Estilos do Menu Hambúrguer 
 */
 .hamburger-menu {
-    display: none; /* Escondido por padrão em desktop */
+    display: none; /* Escondido por padrão em telas maiores que 768px */
     cursor: pointer;
     flex-direction: column;
     justify-content: space-around;
     width: 30px;
     height: 25px;
-    z-index: 1001; /* Para garantir que fique acima do menu mobile */
+    z-index: 1001; 
 }
 
 .hamburger-menu .bar {
@@ -326,8 +304,7 @@ body.dark-theme .theme-toggle .icon-dark { display: inline-flex; }
 }
 
 /*
-* Estilos para a seção Formação
-* Layout flexível com itens de educação em duas colunas e habilidades/idiomas em coluna única.
+Estilos para a seção Formação
 */
 #formacao .container {
     display: flex;
@@ -356,12 +333,12 @@ body.dark-theme .theme-toggle .icon-dark { display: inline-flex; }
     border: 1px solid var(--border-color);
     border-radius: 8px;
     padding: 25px;
-    flex: 1 1 calc(50% - 30px); /* Dois itens por linha em desktop */
+    flex: 1 1 calc(50% - 30px);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
     transition: background-color 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Container para habilidades e idiomas em coluna única */
+
 .skills-languages-container {
     display: flex;
     flex-direction: column;
@@ -424,10 +401,6 @@ body.dark-theme .theme-toggle .icon-dark { display: inline-flex; }
     margin: 5px;
 }
 
-/*
-* Estilos para a seção Portfólio
-* Grid responsivo para exibir os projetos em cartões.
-*/
 #portfolio h2 {
     margin-bottom: 3rem;
 }
@@ -495,8 +468,7 @@ body.dark-theme .theme-toggle .icon-dark { display: inline-flex; }
 }
 
 /*
-* Estilos para a seção Contato
-* Centraliza o formulário e suas informações, com estilização de campos, botões e mensagens de feedback.
+Estilos para a seção Contato
 */
 #contato .container {
     text-align: center;
@@ -569,7 +541,7 @@ body.dark-theme .theme-toggle .icon-dark { display: inline-flex; }
     border-radius: 5px;
     text-align: center;
     font-weight: 600;
-    display: none; /* Escondido por padrão, JavaScript irá exibir */
+    display: none; 
 }
 
 .form-message.success {
@@ -621,8 +593,7 @@ body.dark-theme .theme-toggle .icon-dark { display: inline-flex; }
 }
 
 /*
-* Estilos para o Rodapé
-* Contém informações de direitos autorais e links para redes sociais.
+Estilos para o Rodapé
 */
 footer {
     background-color: var(--component-bg);
@@ -660,8 +631,7 @@ footer .social-links a:hover {
 }
 
 /*
-* Media Queries para Responsividade Geral
-* Ajusta o layout e o tamanho dos elementos para diferentes tamanhos de tela (mobile, tablet, desktop).
+Media Queries para Responsividade Geral
 */
 @media (max-width: 992px) {
     .hero-section h1 {
@@ -683,22 +653,22 @@ footer .social-links a:hover {
     }
 
     #main-nav .nav-links {
-        display: none; /* Oculta em mobile por padrão */
+        display: none;
         flex-direction: column;
         position: absolute;
-        top: 60px; /* Ajustar conforme a altura do header */
+        top: 60px; 
         left: 0;
         width: 100%;
         background-color: var(--header-bg);
         box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         padding: 20px 0;
         transition: transform 0.3s ease-in-out;
-        transform: translateY(-100%); /* Esconde acima */
+        transform: translateY(-100%);
     }
 
     #main-nav .nav-links.active {
-        display: flex; /* Exibe quando ativo */
-        transform: translateY(0); /* Desliza para baixo */
+        display: flex;
+        transform: translateY(0);
     }
 
     #main-nav .nav-links li {
@@ -835,8 +805,8 @@ footer .social-links a:hover {
 }
 
 /*
-* Tema Escuro
-* Sobrescreve as variáveis CSS globais quando a classe 'dark-theme' é aplicada ao body.
+Tema Escuro
+
 */
 body.dark-theme {
     --primary-color: #E0E0E0; /* Tom claro para destacar no fundo escuro */
@@ -846,6 +816,6 @@ body.dark-theme {
     --border-color: #6C757D;
     --header-bg: #343A40;
     --link-hover: #FFFFFF; /* Hover mais claro no tema escuro */
-    --form-error: #f0ad4e; /* Amarelo/Laranja para erros no tema escuro */
-    --form-success: #7FFF00; /* Verde claro para sucesso no tema escuro */
+    --form-error: #f0ad4e; 
+    --form-success: #7FFF00; 
 }
