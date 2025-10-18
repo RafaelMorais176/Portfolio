@@ -12,6 +12,7 @@ Variáveis CSS para Tema Claro
     --primary-color: #2B2E34; 
     --background-color: #F8F9FA; /* Fundo principal */
     --text-color: #343A40; /* Cor de texto principal */
+    --text-color-skills:#FFFFFF;
     --component-bg: #FFFFFF; /* Fundo de componentes */
     --border-color: #CED4DA; /* Cor para bordas e linhas separadoras */
     --header-bg: #FFFFFF; /* Fundo do cabeçalho */
@@ -393,7 +394,7 @@ Estilos para a seção Formação
 
 .language-list li, .skills-list li {
     background-color: var(--primary-color);
-    color: #FFFFFF;
+    color: var(--text-color-skills);
     padding: 6px 12px;
     border-radius: 20px;
     font-size: 0.9rem;
@@ -806,16 +807,22 @@ Media Queries para Responsividade Geral
 
 /*
 Tema Escuro
-
 */
 body.dark-theme {
-    --primary-color: #191919; /* Tom claro para destacar no fundo escuro */
-    --background-color: #111;
+    --primary-color: #E0E0E0; 
+    --background-color: #212529;
     --text-color: #E9ECEF;
-    --component-bg: #191919;
-    --border-color: #191919;
-    --header-bg: #191919;
-    --link-hover: #E9ECEF; /* Hover mais claro no tema escuro */
-    --form-error: #f0ad4e; 
-    --form-success: #7FFF00; 
+    --component-bg: #343A40;
+    --border-color: #6C757D;
+    --header-bg: #343A40;
+    --link-hover: #FFFFFF; /* Hover mais claro no tema escuro */
+    --form-error: #f0ad4e; /* Amarelo/Laranja para erros no tema escuro */
+    --form-success: #7FFF00; /* Verde claro para sucesso no tema escuro */
+
+}
+body.dark-theme .btn-primary{
+    color: #343A40;
+}
+body.dark-theme .language-list li, body.dark-theme .skills-list li {
+    color:#343A40;
 }
