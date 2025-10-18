@@ -60,3 +60,27 @@ themeToggle.addEventListener('click', () => {
         localStorage.setItem('theme', 'dark');
     }
 });
+
+
+const contactForm = document.getElementById('contact-form');
+const formMessage = document.getElementById('form-message');
+
+contactForm.addEventListener('submit', function(e) {
+
+
+    // Limpa mensagens anteriores
+    formMessage.textContent = '';
+    formMessage.classList.remove('success', 'error');
+
+
+
+    if (name === '' || email === '' || message === '') {
+
+        formMessage.textContent = 'Por favor, preencha todos os campos.';
+        formMessage.classList.add('error');
+        formMessage.style.display = 'block';
+
+        return;
+    }
+
+});
